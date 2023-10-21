@@ -1,3 +1,4 @@
+// Script feito para criar usuarios e grupos para a database usado para testar outros codigos, nomes criados aleatoriamente
 const { PrismaClient } = require('@prisma/client');
 
 const prisma = new PrismaClient();
@@ -48,7 +49,7 @@ const dadosIniciais = async () => {
   
       const usuario3 = await prisma.usuario.create({
         data: {
-          nome: 'Joao Silva Junior',
+          nome: 'Joao Silva',
           email: 'joaosilvajunior@gmail.com',
           matricula: 789,
           tipoUsuario: 'ALUNO',
@@ -58,7 +59,7 @@ const dadosIniciais = async () => {
   
       const usuario4 = await prisma.usuario.create({
         data: {
-          nome: 'Alex Leonil ',
+          nome: 'Alex Leonil',
           email: 'alexleonil@gmail.com',
           matricula: 101,
           tipoUsuario: 'ALUNO',
